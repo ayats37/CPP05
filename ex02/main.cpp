@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 13:49:40 by taya              #+#    #+#             */
-/*   Updated: 2026/01/16 15:39:42 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/17 10:52:32 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,24 +42,24 @@ int main()
     std::cout << pardon << std::endl;
 
     std::cout << "\n===== Sign forms =====" << std::endl;
-    f.signForm(shrub);    // should fail (145)
-    p.signForm(shrub);    // ok
+    f.signForm(shrub);
+    p.signForm(shrub);
 
-    p.signForm(robot);    // ok (72)
-    f.signForm(robot);    // fail
+    p.signForm(robot);
+    f.signForm(robot);
 
-    p.signForm(pardon);   // fail (25)
-    a.signForm(pardon);  // ok
+    p.signForm(pardon);
+    a.signForm(pardon);
 
     std::cout << "\n===== Execute forms =====" << std::endl;
-    f.executeForm(shrub);   // fail (137)
-    p.executeForm(shrub);   // ok -> creates file
+    f.executeForm(shrub);
+    p.executeForm(shrub);
 
-    p.executeForm(robot);   // fail (45)
-    a.executeForm(robot);  // ok -> 50%
+    p.executeForm(robot);
+    a.executeForm(robot);
 
-    p.executeForm(pardon);  // fail (5)
-    a.executeForm(pardon); // ok
+    p.executeForm(pardon);
+    a.executeForm(pardon); 
 
     return 0;
 }

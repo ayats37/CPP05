@@ -6,7 +6,7 @@
 /*   By: taya <taya@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 13:49:40 by taya              #+#    #+#             */
-/*   Updated: 2026/01/16 15:06:28 by taya             ###   ########.fr       */
+/*   Updated: 2026/01/17 11:04:56 by taya             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int main()
     Intern intern;
     Bureaucrat a("aya", 1);
 
-    AForm* f1 = intern.makeForm("robotomy request", "Bender");
+    AForm* f1 = intern.makeForm("robotomy request", "test1");
     if (f1)
     {
         a.signForm(*f1);
@@ -32,7 +32,7 @@ int main()
         delete f1;
     }
 
-    AForm* f2 = intern.makeForm("unknown form", "test");
+    AForm* f2 = intern.makeForm("unknown form", "test2");
     if (f2)
         delete f2;
 
